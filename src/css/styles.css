@@ -1,9 +1,18 @@
-img {
-  display: block;
-  /* width: 100%; */
-  width: 300px;
-  height: 300px;
+.li img {
+  margin-bottom: 14px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 4px;
 }
+
+/* img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+} */
+
 .gallery {
   list-style: none;
   display: flex;
@@ -52,4 +61,10 @@ img {
 .cent {
   display: flex;
   justify-content: center;
+}
+.js-btn-hidden {
+  visibility: hidden;
+}
+.js-btn-visibil {
+  visibility: visible;
 }
