@@ -19,17 +19,14 @@ const getSubmitButton = (event) => {
         fetchImages(inputValue, page, API_KEY)
             .then(images =>{
                 console.log(images)
-                
                 if (images.length == false) {
                     refs.buttonLoad.style.display = "none";
+                    alert('You wrote nonsense! =)')
                 }
                 else {
                     addToMarkup(images)
-                    refs.buttonLoad.style.display = "block";
-                    
+                    refs.buttonLoad.style.display = "block";  
                 }
-              
-              
             })
 
         .catch(err => console.log(err))
